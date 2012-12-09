@@ -31,6 +31,8 @@
 %  [\thispagestyle{empty}]
 %  }
 
+\graphicspath{{./pictures/}}
+
 \DeclareMathOperator*{\argmin}{arg\ min}
 \DeclareMathOperator*{\sign}{sign}
 
@@ -233,8 +235,6 @@ R also offers the opportunity for any user to create a package, which is a colle
 
 Consider the following graph.
 
-\includegraphics[width=\textwidth]{graph_map_of_us.png}\\
-
 This graph was constructed using major US cities as vertices and the distance in miles between the cities as edge lengths. Though the vertices in our model will represent nations, not cities, this is one example of how the graph might be structured.
 
 The problem with inferring information from the graph is choosing how to define adjacencies, edge lengths, and vertex weights; in addition,
@@ -277,6 +277,13 @@ Relationships individually between these independent variables and the response 
 
 These variables were removed from consideration in regression analysis.
 
+\begin{figure}
+\centering
+\caption{Example scatterplot of a lack of linear relationship, between inflation rate and obesity rate (the overlaid line is the simple regression line)}
+\label{fig:inflation-obesity-scatter}
+\includegraphics[width=\textwidth]{inflation-obrate-scatter.png}
+\end{figure}
+
 The following are those variables which had a significant linear relationship, without any linearizing transformations required. They are listed along with the p-value from the T-test used to test the strength of the relationship.
 
 %should we have some plots along with this list to illustrate the relationships?
@@ -288,6 +295,13 @@ The following are those variables which had a significant linear relationship, w
 \item Population growth rate (\begin{math}p=1.60\cdot10^{-06}\end{math})
 \item Birth rate (\begin{math}p=1.43\cdot10^{-06}\end{math})
 \end{itemize}
+
+\begin{figure}
+\centering
+\caption{Example scatterplot of a strong linear relationship, between fertility rate and obesity rate (the overlaid line is the simple regression line)}
+\label{fig:fertility-obesity-scatter}
+\includegraphics[width=\textwidth]{fertility-obesity-scatter.png}
+\end{figure}
 
 Finally, some variables showed a stronger linear relationship following a transformation of some kind. This group of variables is also listed along with their transformations and their T-test p-values.
 
