@@ -336,7 +336,7 @@ Finally, some variables showed a stronger linear relationship following a transf
 
 The following variables were extracted from our graphs in Python :
 \begin{itemize}
-\item From the undirected graph of border relationships:
+\item From the undirected graph of border relationships (hereafter, Graph 1):
 	\begin{itemize}
 	\item Shortest path to the United States in terms of number of edges
 	\item Shortest path to the United States in terms of sum of edge weights, defined by border length in kilometers
@@ -353,10 +353,48 @@ The following variables were extracted from our graphs in Python :
 	\end{itemize}
 \end{itemize}
 
+%%%%begin copied section
+
+Relationships individually between these graph-extracted independent variables and the response variable, obesity rate, were also explored for inclusion in a regression model. For the following variables, we were unable to find a linear relationship, or find a suitable transformation to elicit a linear relationship:
+
+\begin{itemize}
+\item TO BE CONTINUED
+\end{itemize}
+
+These variables were removed from consideration in regression analysis.
+
+The following are those variables which had a significant linear relationship, without any linearizing transformations required. They are listed along with the p-value from the T-test used to test the strength of the relationship.
+
+\begin{itemize}
+\item \emph{Graph 1}: Shortest path to the United States in terms of number of edges (\begin{math}p=1.48\cdot10^{-05}\end{math})
+\item \emph{Graph 1}: Shortest path to the United States in terms of sum of edge weights, defined by border length in kilometers (\begin{math}p=4.48\cdot10^{-08}\end{math})
+\end{itemize}
+
+Finally, some variables showed a stronger linear relationship following a transformation of some kind. This group of variables is also listed along with their transformations and their T-test p-values.
+
+%should we show some plots of before and after?
+\begin{itemize}
+\item TO BE CONTINUED
+	\begin{itemize}
+	\item Transformation:
+	\item
+	\end{itemize}
+\end{itemize}
+
+\begin{figure}
+\centering
+\caption{Plots of per person imports versus obesity rate, before and after the linearizing transformation (regression lines overlaid)}
+\label{fig:ppimports-obesity-prepost}
+\includegraphics[width=\textwidth]{ppimports-obesity-pretransform.png}
+\includegraphics[width=\textwidth]{ppimports-obrate-posttransform.png}
+\end{figure}
+
+%%%%end copied section
+
 \section*{Relationships among independent variables}
 \subsection*{Multicollinearity}
 
-We calculated correlation values between all pairs of independent variables as a check for the effect of multicollinearity on our model. There was only one correlation value which was of concern. The correlation between fertility rate and birth rate was \begin{math}0.9703\end{math}, compared to a maximum value of \begin{math}1\end{math}. The relationship between the two is evident from a scatterplot. 
+We calculated correlation values between all pairs of independent variables as a check for the effect of multicollinearity on our model. The correlation between fertility rate and birth rate was \begin{math}0.9703\end{math}, compared to a maximum value of \begin{math}1\end{math}. The relationship between the two is evident from a scatterplot. 
 
 \begin{figure}
 \centering
@@ -373,6 +411,8 @@ As discussed in the previous chapter, this relationship, known as multicollinear
 \label{fig:fertility.birth_rate}
 \includegraphics[width=\textwidth]{fertility-birth_rate-obesity-scatter.png}
 \end{figure}
+
+There was also a very strong correlation between the two variables extracted from Graph 1, shortest path to the United States in terms of number of edges, and in terms of sum of edge lengths when weighted by national border length. These two variables had a correlation of \begin{math}0.9050\end{math}. In this situation, we did not find that combining the two variables into a new variable was able to yield a stronger relationship than the variables on their own. Therefore, we dropped from our analysis the variable which had a weaker linear relationship with obesity rate, which was the shortest path in terms of the number of edges.
 
 \section*{Validation of usage of graphical variables}
 ANOVA test used to show that the model with the graphical variables is more informative than the model without them (TO BE CONTINUED)
