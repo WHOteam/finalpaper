@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.9.15)  9 DEC 2012 13:43
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.9.15)  9 DEC 2012 15:54
 entering extended mode
 **main.tex
 
@@ -327,19 +327,55 @@ Package pdftex.def Info: ./pictures/fertility-obesity-scatter.png used on input
  line 303.
 (pdftex.def)             Requested size: 433.62pt x 275.80879pt.
  [11 <C:/Users/Shanbogen/Documents/Schoolwork/MathModeling/groupproj/finalpaper
-/pictures/inflation-obrate-scatter.png>] [12 <C:/Users/Shanbogen/Documents/Scho
-olwork/MathModeling/groupproj/finalpaper/pictures/fertility-obesity-scatter.png
->]
+/pictures/inflation-obrate-scatter.png>]
+<./pictures/ppimports-obesity-pretransform.png, id=50, 852.18375pt x 542.025pt>
+File: ./pictures/ppimports-obesity-pretransform.png Graphic file (type png)
+<use ./pictures/ppimports-obesity-pretransform.png>
+Package pdftex.def Info: ./pictures/ppimports-obesity-pretransform.png used on 
+input line 331.
+(pdftex.def)             Requested size: 433.62pt x 275.80879pt.
+
+<./pictures/ppimports-obrate-posttransform.png, id=51, 852.18375pt x 542.025pt>
+File: ./pictures/ppimports-obrate-posttransform.png Graphic file (type png)
+<use ./pictures/ppimports-obrate-posttransform.png>
+Package pdftex.def Info: ./pictures/ppimports-obrate-posttransform.png used on 
+input line 332.
+(pdftex.def)             Requested size: 433.62pt x 275.80879pt.
+ [12 <C:/Users/Shanbogen/Documents/Schoolwork/MathModeling/groupproj/finalpaper
+/pictures/fertility-obesity-scatter.png>] [13 <C:/Users/Shanbogen/Documents/Sch
+oolwork/MathModeling/groupproj/finalpaper/pictures/ppimports-obesity-pretransfo
+rm.png> <C:/Users/Shanbogen/Documents/Schoolwork/MathModeling/groupproj/finalpa
+per/pictures/ppimports-obrate-posttransform.png>]
+<./pictures/fertility-birth_rate.png, id=62, 852.18375pt x 542.025pt>
+File: ./pictures/fertility-birth_rate.png Graphic file (type png)
+
+<use ./pictures/fertility-birth_rate.png>
+Package pdftex.def Info: ./pictures/fertility-birth_rate.png used on input line
+ 365.
+(pdftex.def)             Requested size: 433.62pt x 275.80879pt.
+
+<./pictures/fertility-birth_rate-obesity-scatter.png, id=63, 852.18375pt x 542.
+025pt>
+File: ./pictures/fertility-birth_rate-obesity-scatter.png Graphic file (type pn
+g)
+ <use ./pictures/fertility-birth_rate-obesity-scatter.png>
+Package pdftex.def Info: ./pictures/fertility-birth_rate-obesity-scatter.png us
+ed on input line 374.
+(pdftex.def)             Requested size: 433.62pt x 275.80879pt.
+ [14] [15 <C:/Users/Shanbogen/Documents/Schoolwork/MathModeling/groupproj/final
+paper/pictures/fertility-birth_rate.png> <C:/Users/Shanbogen/Documents/Schoolwo
+rk/MathModeling/groupproj/finalpaper/pictures/fertility-birth_rate-obesity-scat
+ter.png>]
 Chapter 5.
-[13
+[16
 
 ]
 Appendix A.
-[14
+[17
 
-] [15]
+] [18]
 Appendix B.
-[16
+[19
 
 ]
 (C:\Users\Shanbogen\Documents\Schoolwork\MathModeling\groupproj\finalpaper\main
@@ -366,32 +402,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--22
 ervices/generalSurgery
  []
 
-) [17
+) [20
 
 ]
 (C:\Users\Shanbogen\Documents\Schoolwork\MathModeling\groupproj\finalpaper\main
 .aux) ) 
 Here is how much of TeX's memory you used:
- 3552 strings out of 494045
- 51028 string characters out of 3148375
- 116133 words of memory out of 3000000
- 6789 multiletter control sequences out of 15000+200000
+ 3575 strings out of 494045
+ 52023 string characters out of 3148375
+ 115133 words of memory out of 3000000
+ 6808 multiletter control sequences out of 15000+200000
  15509 words of font info for 57 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,5n,38p,1162b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,5n,38p,1272b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (17 pages, 189996 bytes).
+lic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+
+Output written on main.pdf (20 pages, 213552 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 120 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

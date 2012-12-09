@@ -185,7 +185,7 @@ More specifically, a regression model relates the response variable, \begin{math
 
 Several underlying assumptions come with performing regression analysis. First, we must assume that the sample we are using is representative of the population for which the inference will be useful. Since our sample data consists of nearly every country, our model meets this assumption. Second, we must assume that the errors for each prediction instance are independent from one another and from the value of the independent variables - more specifically, \begin{math}E[\varepsilon_i|x_i] = E[\varepsilon_i] = 0\end{math}. We can control for meeting this assumption by examining data on the residuals of our model - the differences between the predicted values and actual values for each instance. If the assumption is met, then these residuals will follow no particular pattern, appearing to be random and uncorrelated with any other factors.
 
-Third, we assume that the predictors are not correlated with one another; that is, no two independent variables are telling us the same information and thus clouding the quality of our model. We can control for this by investigating a covariance matrix among all independence variables, and taking action to modify, combine, or remove such variables that have a high correlation with another variable.
+Third, we assume that the predictors are not correlated with one another; that is, no two independent variables are telling us the same information and thus clouding the quality of our model. We can control for this by investigating a covariance matrix among all independence variables, and taking action to modify, combine, or remove such variables that have a high correlation with another variable. The current standard is that a correlation value between two independent variables of 0.4 or greater warrants further investigation. Variables with a correlation value of 0.8 or greater are almost certainly causing multicollinearity in the model. The consequences of this situation are that the affected coefficients have larger standard errors than they otherwise would - our estimates are less precise; the model tends to overfit the data; and some computer programs may produce numerically inaccurate estimates because the matrix \begin{math}X^{T}X\end{math} is either not invertible, or not invertible at the level of accuracy that the software has. Some standard remedies for the problem of multicollinearity include dropping one of the variables, mean-centering the variables, or creating a new variable which represents both variables together.
 
 Finally and most importantly, for a linear regression model, it is assumed that each predictor variable has a linear relationship with the response variable, which in our case, is obesity. Some variables may appear to have logarithmic, exponential, polynomial, or even more complicated relationships with the response variable. There are standard variable transformations to deal with these more complicated relationships and manifest them as linear ones. For example, if it appears that the obesity rate varies closely with the square root of a variable, then we transform that variable into its square root for inclusion in our regression analysis. This new variable can be equally informative to the original version, while also meeting the assumptions demanded by the regression model.
 
@@ -309,8 +309,8 @@ Finally, some variables showed a stronger linear relationship following a transf
 \begin{itemize}
 \item Per person imports (USD)
 	\begin{itemize}
-	\item Transformation: \begin{math}f(x) = x + x^{2}\end{math}
-	\item \begin{math}p_{x}=0.0175\end{math}; \begin{math}p_{x^{2}}=0.0350\end{math}
+	\item Transformation: \begin{math}f(x) =\log{x}\end{math}
+	\item \begin{math}p=2.70\cdot10^{-07}\end{math}
 	\end{itemize}
 \item Per person GDP (USD)
 	\begin{itemize}
@@ -324,12 +324,58 @@ Finally, some variables showed a stronger linear relationship following a transf
 	\end{itemize}
 \end{itemize}
 
+\begin{figure}
+\centering
+\caption{Plots of per person imports versus obesity rate, before and after the linearizing transformation (regression lines overlaid)}
+\label{fig:ppimports-obesity-prepost}
+\includegraphics[width=\textwidth]{ppimports-obesity-pretransform.png}
+\includegraphics[width=\textwidth]{ppimports-obrate-posttransform.png}
+\end{figure}
+
+\section*{Choice of graphs and graphical independent variables}
+
+The following variables were extracted from our graphs in Python :
+\begin{itemize}
+\item From the undirected graph of border relationships:
+	\begin{itemize}
+	\item Shortest path to the United States in terms of number of edges
+	\item Shortest path to the United States in terms of sum of edge weights, defined by border length in kilometers
+	\end{itemize}
+\item From the directed graph of import relationships:
+	\begin{itemize}
+	\item Number of incoming edges (i.e., the number of countries which have that country as a major source of imports)
+	\item TO BE CONTINUED
+	\end{itemize}
+\item From the directed graph of export relationships:
+	\begin{itemize}
+	\item Number of outgoing edges (i.e., the number of countries which import a major amount from that country)
+	\item TO BE CONTINUED
+	\end{itemize}
+\end{itemize}
+
 \section*{Relationships among independent variables}
 \subsection*{Multicollinearity}
 
-%show plot of fertility vs. birth rate and show correlation coefficient
-%discuss what action was taken
+We calculated correlation values between all pairs of independent variables as a check for the effect of multicollinearity on our model. There was only one correlation value which was of concern. The correlation between fertility rate and birth rate was \begin{math}0.9703\end{math}, compared to a maximum value of \begin{math}1\end{math}. The relationship between the two is evident from a scatterplot. 
 
+\begin{figure}
+\centering
+\caption{Scatterplot of fertility versus birth rate, overlaid with a simple regression line}
+\label{fig:fertility-birth_rate}
+\includegraphics[width=\textwidth]{fertility-birth_rate.png}
+\end{figure}
+
+As discussed in the previous chapter, this relationship, known as multicollinearity, means that the two variables are offering redundant information to our model. For this particular case we were able to find an easy solution. We created a new independent variable equal to the fertility rate multiplied by the birth rate. A hypothesis test on the linear relationship of this new variable with obesity rate gave \begin{math}p=3.29\cdot10^{-08}\end{math}, which is even smaller than the p-values for the variables individually.
+
+\begin{figure}
+\centering
+\caption{Scatterplot of the new variable versus obesity, overlaid with a simple regression line}
+\label{fig:fertility.birth_rate}
+\includegraphics[width=\textwidth]{fertility-birth_rate-obesity-scatter.png}
+\end{figure}
+
+\section*{Validation of usage of graphical variables}
+ANOVA test used to show that the model with the graphical variables is more informative than the model without them (TO BE CONTINUED)
 
 \chapter{Results}
 
@@ -394,6 +440,10 @@ Finally, some variables showed a stronger linear relationship following a transf
 \vspace{5pt}
 
 \noindent {\bf CSV} Comma-separated Values
+
+\vspace{5pt}
+
+\noindent {\bf USD} United States Dollars
 
 %\endinput
 
