@@ -1,9 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.9.15)  9 DEC 2012 19:26
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.30)  9 DEC 2012 23:36
 entering extended mode
-**main.tex
-
-(C:\Users\Shanbogen\Documents\Schoolwork\MathModeling\groupproj\finalpaper\main
-.tex
+**C:/Users/Hillary/550400/finalpaper/main.tex
+(C:/Users/Hillary/550400/finalpaper/main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -15,9 +13,9 @@ an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese,
 romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
 sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
 senglishmax, welsh, loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -33,34 +31,34 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\dtk\dtklogos.sty"
+(C:\Users\Hillary\AppData\Roaming\MiKTeX\2.9\tex\latex\dtk\dtklogos.sty
 Package: dtklogos 2010/06/19 1.9b gene
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -71,24 +69,24 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 LaTeX Info: Redefining \XeTeX on input line 282.
 LaTeX Info: Redefining \XeLaTeX on input line 291.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks15
 \ex@=\dimen105
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen106
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count89
@@ -129,7 +127,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\bm.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\bm.sty"
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
@@ -137,14 +135,14 @@ Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
 LaTeX Info: Redefining \bm on input line 204.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup7
 \symAMSb=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\classes\amsthm.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\classes\amsthm.sty"
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks20
 \thm@bodyfont=\toks21
@@ -156,11 +154,10 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip48
 \dth@everypar=\toks25
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+(C:\Users\Hillary\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count101
 \float@exts=\toks26
@@ -168,13 +165,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks27
 \@floatcapt=\box29
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks28
 \c@algorithm=\count102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
+(C:\Users\Hillary\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithmic.s
+ty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@unique=\count103
 \c@ALC@line=\count104
@@ -183,7 +181,7 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \ALC@tlm=\skip49
 \algorithmicindent=\skip50
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+(C:\Users\Hillary\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip51
 \subfigcapskip=\skip52
@@ -199,14 +197,13 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+(C:\Users\Hillary\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg)
 \subfig@top=\skip55
 \subfig@bottom=\skip56
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+) (C:\Users\Hillary\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
 Package: caption 2012/02/19 v3.2f Customizing captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+(C:\Users\Hillary\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
 Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
 \captionmargin=\dimen116
 \captionmargin@=\dimen117
@@ -219,16 +216,15 @@ Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
 Package caption Info: float package is loaded.
 Package caption Info: subfigure package is loaded.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\excludeonly\excludeonly.sty"
+(C:\Users\Hillary\AppData\Roaming\MiKTeX\2.9\tex\latex\excludeonly\excludeonly.
+sty
 Package: excludeonly 2003/03/14 v1.0 eponymous command opposite to \includeonly
 
 )
 \c@theorem=\count112
 \c@lemma=\count113
 \c@definition=\count114
-
-(C:\Users\Shanbogen\Documents\Schoolwork\MathModeling\groupproj\finalpaper\main
-.aux
+ (C:\Users\Hillary\550400\finalpaper\main.aux
 
 LaTeX Warning: Label `fig:ppimports-obesity-prepost' multiply defined.
 
@@ -245,7 +241,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
 LaTeX Font Info:    ... okay on input line 61.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
 LaTeX Font Info:    ... okay on input line 61.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ (C:\Users\Hillary\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count115
 \scratchdimen=\dimen122
@@ -261,35 +257,33 @@ LaTeX Font Info:    ... okay on input line 61.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- <./pictures/jhu.png, id=1, 267.24844pt x 78.97546pt>
-File: ./pictures/jhu.png Graphic file (type png)
-
-<use ./pictures/jhu.png>
-Package pdftex.def Info: ./pictures/jhu.png used on input line 78.
+ <jhu.png, id=1, 267.24844pt x 78.97546pt>
+File: jhu.png Graphic file (type png)
+ <use jhu.png>
+Package pdftex.def Info: jhu.png used on input line 78.
 (pdftex.def)             Requested size: 216.81pt x 64.0734pt.
 LaTeX Font Info:    Try loading font information for U+msa on input line 82.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 82.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Shanbogen/Docume
-nts/Schoolwork/MathModeling/groupproj/finalpaper/pictures/jhu.png>]
+{C:/Users/Hillary/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/
+Hillary/550400/finalpaper/jhu.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
  [2
 
-]
-(C:\Users\Shanbogen\Documents\Schoolwork\MathModeling\groupproj\finalpaper\main
-.toc)
+] (C:\Users\Hillary\550400\finalpaper\main.toc)
 \tf@toc=\write3
- [3
+
+[3
 
 ]
 Chapter 1.
@@ -302,13 +296,17 @@ Chapter 2.
 ] [6]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 210.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 210.
- [7] [8]
+ [7]
+[8]
 Chapter 3.
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
 [9
 
 ]
@@ -330,8 +328,8 @@ File: ./pictures/fertility-obesity-scatter.png Graphic file (type png)
 Package pdftex.def Info: ./pictures/fertility-obesity-scatter.png used on input
  line 303.
 (pdftex.def)             Requested size: 433.62pt x 275.80879pt.
- [11 <C:/Users/Shanbogen/Documents/Schoolwork/MathModeling/groupproj/finalpaper
-/pictures/inflation-obrate-scatter.png>]
+ [11 <C:/Users/Hillary/550400/finalpaper/pictures/inflation-obrate-scatter.png>
+]
 <./pictures/ppimports-obesity-pretransform.png, id=50, 852.18375pt x 542.025pt>
 File: ./pictures/ppimports-obesity-pretransform.png Graphic file (type png)
 <use ./pictures/ppimports-obesity-pretransform.png>
@@ -345,11 +343,10 @@ File: ./pictures/ppimports-obrate-posttransform.png Graphic file (type png)
 Package pdftex.def Info: ./pictures/ppimports-obrate-posttransform.png used on 
 input line 332.
 (pdftex.def)             Requested size: 433.62pt x 275.80879pt.
- [12 <C:/Users/Shanbogen/Documents/Schoolwork/MathModeling/groupproj/finalpaper
-/pictures/fertility-obesity-scatter.png>] [13 <C:/Users/Shanbogen/Documents/Sch
-oolwork/MathModeling/groupproj/finalpaper/pictures/ppimports-obesity-pretransfo
-rm.png> <C:/Users/Shanbogen/Documents/Schoolwork/MathModeling/groupproj/finalpa
-per/pictures/ppimports-obrate-posttransform.png>]
+ [12 <C:/Users/Hillary/550400/finalpaper/pictures/fertility-obesity-scatter.png
+>] [13 <C:/Users/Hillary/550400/finalpaper/pictures/ppimports-obesity-pretransf
+orm.png> <C:/Users/Hillary/550400/finalpaper/pictures/ppimports-obrate-posttran
+sform.png>]
 <./pictures/borderdegrees_wtd-obrate-scatter.png, id=62, 852.18375pt x 542.025p
 t>
 File: ./pictures/borderdegrees_wtd-obrate-scatter.png Graphic file (type png)
@@ -386,11 +383,11 @@ g)
 Package pdftex.def Info: ./pictures/fertility-birth_rate-obesity-scatter.png us
 ed on input line 419.
 (pdftex.def)             Requested size: 433.62pt x 275.80879pt.
- [15 <C:/Users/Shanbogen/Documents/Schoolwork/MathModeling/groupproj/finalpaper
-/pictures/borderdegrees_wtd-obrate-scatter.png>] [16] [17 <C:/Users/Shanbogen/D
-ocuments/Schoolwork/MathModeling/groupproj/finalpaper/pictures/fertility-birth_
-rate.png> <C:/Users/Shanbogen/Documents/Schoolwork/MathModeling/groupproj/final
-paper/pictures/fertility-birth_rate-obesity-scatter.png>] [18]
+ [15 <C:/Users/Hillary/550400/finalpaper/pictures/borderdegrees_wtd-obrate-scat
+ter.png>]
+[16] [17 <C:/Users/Hillary/550400/finalpaper/pictures/fertility-birth_rate.png>
+ <C:/Users/Hillary/550400/finalpaper/pictures/fertility-birth_rate-obesity-scat
+ter.png>] [18]
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 433--457
@@ -421,9 +418,7 @@ Appendix A.
 Appendix B.
 [23
 
-]
-(C:\Users\Shanbogen\Documents\Schoolwork\MathModeling\groupproj\finalpaper\main
-.bbl
+] (C:\Users\Hillary\550400\finalpaper\main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 10--15
 []\OT1/cmr/m/n/10.95 CIA World Fact-book.  Obe-sity - adult preva-lence rate.
  []
@@ -448,33 +443,32 @@ ervices/generalSurgery
 
 ) [24
 
-]
-(C:\Users\Shanbogen\Documents\Schoolwork\MathModeling\groupproj\finalpaper\main
-.aux)
+] (C:\Users\Hillary\550400\finalpaper\main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  3583 strings out of 494045
- 52321 string characters out of 3148375
+ 52556 string characters out of 3145963
  116133 words of memory out of 3000000
  6814 multiletter control sequences out of 15000+200000
  15855 words of font info for 58 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,9n,38p,1272b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (24 pages, 245546 bytes).
+ 36i,9n,38p,1307b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (24 pages, 246521 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
