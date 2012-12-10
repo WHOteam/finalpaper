@@ -114,7 +114,7 @@ Michael Weinberger, \texttt{michael.lee.weinberger@gmail.com} \\
 
 % DATE
 \vspace \shiftdowna
-Date: Last Complied on \today
+Date: Last Compiled on \today
 
 \end{center}
 
@@ -370,6 +370,13 @@ The following are those variables which had a significant linear relationship, w
 \item \emph{Graph 1}: Shortest path to the United States in terms of sum of edge weights, defined by border length in kilometers (\begin{math}p=4.48\cdot10^{-08}\end{math})
 \end{itemize}
 
+\begin{figure}
+\centering
+\caption{Example scatterplot of a strong linear relationship, between shortest path to the United States and obesity rate (the overlaid line is the simple regression line)}
+\label{fig:shortpath-obesity-scatter}
+\includegraphics[width=\textwidth]{borderdegrees_wtd-obrate-scatter.png}
+\end{figure}
+
 Finally, some variables showed a stronger linear relationship following a transformation of some kind. This group of variables is also listed along with their transformations and their T-test p-values.
 
 %should we show some plots of before and after?
@@ -414,14 +421,55 @@ As discussed in the previous chapter, this relationship, known as multicollinear
 
 There was also a very strong correlation between the two variables extracted from Graph 1, shortest path to the United States in terms of number of edges, and in terms of sum of edge lengths when weighted by national border length. These two variables had a correlation of \begin{math}0.9050\end{math}. In this situation, we did not find that combining the two variables into a new variable was able to yield a stronger relationship than the variables on their own. Therefore, we dropped from our analysis the variable which had a weaker linear relationship with obesity rate, which was the shortest path in terms of the number of edges.
 
+\section*{Stepwise regression to determine final variable inclusion}
+
+Talk about which variables were significant at first but then later got eliminated because in the multiple model they weren't significant
+
 \section*{Validation of usage of graphical variables}
 ANOVA test used to show that the model with the graphical variables is more informative than the model without them (TO BE CONTINUED)
 
 \chapter{Results}
 
+After analyzing all of the potential independent variables, checking for linear regression assumptions, and verifying the significance of all relevant hypothesis tests and statistics, we developed a final regression model:
+\\
+\\
+\begin{math}
+\hat{Y} = f(X,\beta) + \epsilon
+\end{math}
+\\
+\\
+where
+\\
+\begin{math} X = 
+\begin{pmatrix}
+x1 \\ x2 \\ \sqrt{x3} \\ x4 \\ \log{x5}
+\end{pmatrix}
+\end{math}
+\\
+and
+\begin{math} \beta =
+\begin{pmatrix}
+0.01 \\ -0.045 \\ 56 \\ 1.23\cdot10^{-3}
+\end{pmatrix}
+\end{math}
+\\ \\
+In the appendix, a final list of variables corresponding to the vector X and detailed explanations of their meanings can be found.
 
+\begin{math} \rho =
+\begin{pmatrix}
+p(x_1) \\ p(x_2) \\ \vdots \\p(x_{27})
+\end{pmatrix}
+\end{math}
 
-%\chapter{Conclusion}
+where \begin{math}p(x_i)\end{math} is the p-value resulting from the hypothesis test that the slope coefficient is zero versus the hypothesis that it is nonzero
+
+\chapter{Conclusion}
+
+-Explain meaning of model in terms of what the variables actually represent
+\\
+-Talk about remaining deficiencies with the model and how they could be improved in the feature, such as the problem of missing information for some predictors
+\\
+-Talk about other possibilities for future research
 
 \ifthenelse{\boolean{@twoside}}{\myclearpage}{}
 
