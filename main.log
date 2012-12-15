@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.9.15)  15 DEC 2012 12:57
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.9.15)  15 DEC 2012 14:15
 entering extended mode
 **main.tex
 
@@ -357,59 +357,59 @@ t>
 File: ./pictures/borderdegrees_wtd-obrate-scatter.png Graphic file (type png)
  <use ./pictures/borderdegrees_wtd-obrate-scatter.png>
 Package pdftex.def Info: ./pictures/borderdegrees_wtd-obrate-scatter.png used o
-n input line 400.
+n input line 414.
 (pdftex.def)             Requested size: 433.62pt x 275.80879pt.
- [17 <C:/Users/Shanbogen/Documents/Schoolwork/MathModeling/groupproj/finalpaper
-/pictures/borderdegrees_wtd-obrate-scatter.png>]
-<./pictures/fertility-birth_rate.png, id=78, 852.18375pt x 542.025pt>
+
+<./pictures/fertility-birth_rate.png, id=74, 852.18375pt x 542.025pt>
 File: ./pictures/fertility-birth_rate.png Graphic file (type png)
 
 <use ./pictures/fertility-birth_rate.png>
 Package pdftex.def Info: ./pictures/fertility-birth_rate.png used on input line
- 425.
+ 438.
 (pdftex.def)             Requested size: 433.62pt x 275.80879pt.
 
-<./pictures/fertility-birth_rate-obesity-scatter.png, id=79, 852.18375pt x 542.
+<./pictures/fertility-birth_rate-obesity-scatter.png, id=75, 852.18375pt x 542.
 025pt>
 File: ./pictures/fertility-birth_rate-obesity-scatter.png Graphic file (type pn
 g)
  <use ./pictures/fertility-birth_rate-obesity-scatter.png>
 Package pdftex.def Info: ./pictures/fertility-birth_rate-obesity-scatter.png us
-ed on input line 434.
+ed on input line 447.
 (pdftex.def)             Requested size: 433.62pt x 275.80879pt.
- [18 <C:/Users/Shanbogen/Documents/Schoolwork/MathModeling/groupproj/finalpaper
-/pictures/fertility-birth_rate.png>] [19 <C:/Users/Shanbogen/Documents/Schoolwo
-rk/MathModeling/groupproj/finalpaper/pictures/fertility-birth_rate-obesity-scat
-ter.png>]
+ [17] [18 <C:/Users/Shanbogen/Documents/Schoolwork/MathModeling/groupproj/final
+paper/pictures/borderdegrees_wtd-obrate-scatter.png> <C:/Users/Shanbogen/Docume
+nts/Schoolwork/MathModeling/groupproj/finalpaper/pictures/fertility-birth_rate.
+png>] [19 <C:/Users/Shanbogen/Documents/Schoolwork/MathModeling/groupproj/final
+paper/pictures/fertility-birth_rate-obesity-scatter.png>] [20]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 453--477
+Underfull \hbox (badness 10000) in paragraph at lines 466--490
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 453--477
+Underfull \hbox (badness 10000) in paragraph at lines 466--490
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 453--477
+Underfull \hbox (badness 10000) in paragraph at lines 466--490
 
  []
 
-[20
-
-]
-Chapter 6.
 [21
 
 ]
-Appendix A.
+Chapter 6.
 [22
 
-] [23]
+]
+Appendix A.
+[23
+
+] [24]
 Appendix B.
-[24
+[25
 
 ]
 (C:\Users\Shanbogen\Documents\Schoolwork\MathModeling\groupproj\finalpaper\main
@@ -436,7 +436,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--22
 ervices/generalSurgery
  []
 
-) [25
+) [26
 
 ]
 (C:\Users\Shanbogen\Documents\Schoolwork\MathModeling\groupproj\finalpaper\main
@@ -444,7 +444,7 @@ ervices/generalSurgery
 Here is how much of TeX's memory you used:
  3586 strings out of 494045
  52489 string characters out of 3148375
- 116133 words of memory out of 3000000
+ 117133 words of memory out of 3000000
  6814 multiletter control sequences out of 15000+200000
  15855 words of font info for 58 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
@@ -460,9 +460,9 @@ onts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (25 pages, 257604 bytes).
+Output written on main.pdf (26 pages, 258899 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
+ 149 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

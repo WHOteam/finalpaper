@@ -287,9 +287,9 @@ These variables were removed from consideration in regression analysis.
 \caption[Scatterplot of a lack of linear relationship]{Example scatterplot of a lack of linear relationship, between inflation rate and obesity rate (the overlaid line is the simple regression line)}
 \end{figure}
 
-The following are those variables which had a significant linear relationship, without any linearizing transformations required. They are listed along with the p-value from the T-test used to test the strength of the relationship.
+The following are those variables which had a significant linear relationship, without any linearizing transformations required. They are listed along with the $p$-value from the $t$-test used to test the strength of the relationship.
 
-%should we have some plots along with this list to illustrate the relationships?
+
 \begin{itemize}
 \item Fertility rate (\begin{math}p=6.35\cdot10^{-07}\end{math})
 \item Total population (\begin{math}p=0.0521\end{math})
@@ -306,7 +306,7 @@ The following are those variables which had a significant linear relationship, w
 \caption[Scatterplot of a strong linear relationship]{Example scatterplot of a strong linear relationship, between fertility rate and obesity rate (the overlaid line is the simple regression line)}
 \end{figure}
 
-Finally, some variables showed a stronger linear relationship following a transformation of some kind. This group of variables is also listed along with their transformations and their T-test p-values.
+Finally, some variables showed a stronger linear relationship following a transformation of some kind. This group of variables is also listed along with their transformations and their $t$-test $p$-values.
 
 %should we show some plots of before and after?
 \begin{itemize}
@@ -323,7 +323,7 @@ Finally, some variables showed a stronger linear relationship following a transf
 \item Percentage of children under age 5 who are underweight
 	\begin{itemize}
 	\item Transformation: \begin{math}f(x) = \sqrt{x}\end{math}
-	\item \begin{math}p=2.00\cdot10^{-16}\end{math}
+	\item \begin{math}p\leq2.00\cdot10^{-16}\end{math}
 	\end{itemize}
 \end{itemize}
 
@@ -345,35 +345,42 @@ We use three different graphs in order to create three theoretical graphs in Pyt
 \item \emph{Weighting 2} was defined by giving existing edges a weight equal to the absolute difference between the obesity rates of the two countries represented by their endpoints.
 \end{itemize}
 
-\textbf{Graph 2} was defined using a vertex corresponding to each country, and a directed edge from vertex $i$ to vertex $j$ if the country corresponding to vertix $i$ exports over 4\% of its total exports to the country corresponding to vertex $j$ (i.e., lists the country as a major export partner).
-\begin{itemize}
-\item \emph{Weighting 1} was defined by giving existing edges a weight equal to the specific percentage of exports.
-\item \emph{Weighting 2} was defined by giving existing edges a weight equal to the absolute difference between the obesity rates of the two countries represented by their endpoints.
-\end{itemize}
-
-\textbf{Graph 3} was defined using a vertex corresponding to each country, and a directed edge from vertex $i$ to vertex $j$ if the country corresponding to vertix $i$ imports over 4\% of its total imports from the country corresponding to vertex $j$ (i.e., lists the country as a major import partner).
+%imports graph
+\textbf{Graph 2} was defined using a vertex corresponding to each country, and a directed edge from vertex $i$ to vertex $j$ if the country corresponding to vertix $i$ imports over 4\% of its total imports from the country corresponding to vertex $j$ (i.e., lists the country as a major import partner).
 \begin{itemize}
 \item \emph{Weighting 1} was defined by giving existing edges a weight equal to the specific percentage of imports.
 \item \emph{Weighting 2} was defined by giving existing edges a weight equal to the absolute difference between the obesity rates of the two countries represented by their endpoints.
 \end{itemize}
 
+%exports graph
+\textbf{Graph 3} was defined using a vertex corresponding to each country, and a directed edge from vertex $i$ to vertex $j$ if the country corresponding to vertix $i$ exports over 4\% of its total exports to the country corresponding to vertex $j$ (i.e., lists the country as a major export partner).
+\begin{itemize}
+\item \emph{Weighting 1} was defined by giving existing edges a weight equal to the specific percentage of exports.
+\item \emph{Weighting 2} was defined by giving existing edges a weight equal to the absolute difference between the obesity rates of the two countries represented by their endpoints.
+\end{itemize}
+
 \noindent
-The following variables were extracted from our graphs in Python :
+The following variables were extracted for each vertex from our graphs in Python:
 \begin{itemize}
 \item \emph{Graph 1}:
 	\begin{itemize}
-	\item Shortest path to the United States in terms of number of edges
-	\item Shortest path to the United States in terms of sum of weighting 1
+	\item Total vertex degree
+	\item Shortest path to the United States, unweighted graph
+	\item Shortest path to the United States in terms of weighting 1
+	\item Average weight of incident edges in terms of weighting 2
+	\item Average obesity rate of all countries whose corresponding vertices are adjacent to the vertex in question
 	\end{itemize}
 \item \emph{Graph 2}:
 	\begin{itemize}
-	\item Number of incoming edges (i.e., the number of countries which have that country as a major source of imports)
-	\item TO BE CONTINUED
+	\item Number of incoming edges (i.e., the number of countries which have that country as a major source of imports) minus number of outgoing edges (i.e., the number of major import sources the country has)
+	\item Shortest path to the United States in terms of sum of weighting 1
+	\item Average weight of outgoing edges in terms of weighting 2
 	\end{itemize}
 \item \emph{Graph 3}:
 	\begin{itemize}
-	\item Number of outgoing edges (i.e., the number of countries which import a major amount from that country)
-	\item TO BE CONTINUED
+	\item Number of incoming edges (i.e., the number of countries which have that country as a major target of exports) minus number of outgoing edges (i.e., the number of major export targets the country has)
+	\item Shortest path to the United States in terms of sum of weighting 1
+	\item Average weight of outgoing edges in terms of weighting 2
 	\end{itemize}
 \end{itemize}
 
@@ -382,16 +389,23 @@ The following variables were extracted from our graphs in Python :
 Relationships individually between these graph-extracted independent variables and the response variable, obesity rate, were also explored for inclusion in a regression model. For the following variables, we were unable to find a linear relationship, or find a suitable transformation to elicit a linear relationship:
 
 \begin{itemize}
-\item TO BE CONTINUED
+\item \textit{Graph 3}: Shortest path to the United States in terms of sum of weighting 1
+\item \textit{Graph 2}: Number of incoming edges minus number of outgoing edges
+\item \textit{Graph 3}: Number of incoming edges minus number of outgoing edges
 \end{itemize}
 
 These variables were removed from consideration in regression analysis.
 
-The following are those variables which had a significant linear relationship, without any linearizing transformations required. They are listed along with the p-value from the T-test used to test the strength of the relationship.
+The following are those variables which had a significant linear relationship, without any linearizing transformations required. They are listed along with the $p$-value from the $t$-test used to test the strength of the relationship.
 
 \begin{itemize}
-\item \emph{Graph 1}: Shortest path to the United States in terms of number of edges (\begin{math}p=1.48\cdot10^{-05}\end{math})
-\item \emph{Graph 1}: Shortest path to the United States in terms of sum of edge weights, defined by border length in kilometers (\begin{math}p=4.48\cdot10^{-08}\end{math})
+\item \emph{Graph 1}: Shortest path to the United States with unweighted edges (\begin{math}p=1.48\cdot10^{-05}\end{math})
+\item \emph{Graph 1}: Shortest path to the United States in terms of weighting 1 (\begin{math}p=4.48\cdot10^{-08}\end{math})
+\item \emph{Graph 1}: Total vertex degree (\begin{math}p=0.000491\end{math})
+\item \emph{Graph 1}: Average weight of incident edges in terms of weighting 2 (\begin{math}p=7.10\cdot10^{-10}\end{math})
+\item \emph{Graph 1}: Average obesity rate of countries whose corresponding vertices are adjacent to the vertex in question (\begin{math}p\leq2.00\cdot10^{-16}\end{math})
+\item \emph{Graph 2}: Average weight of outgoing edges in terms of weighting 2 (\begin{math}p=2.22\cdot10^{-11}\end{math})
+\item \emph{Graph 3}: Average weight of outgoing edges in terms of weighting 2 (\begin{math}p=1.81\cdot10^{-12}\end{math})
 \end{itemize}
 
 \begin{figure}
@@ -401,14 +415,13 @@ The following are those variables which had a significant linear relationship, w
 \caption[Scatterplot of a linear relationship with a graph-theoretic variable]{Example scatterplot of a strong linear relationship, between shortest path to the United States and obesity rate (the overlaid line is the simple regression line)}
 \end{figure}
 
-Finally, some variables showed a stronger linear relationship following a transformation of some kind. This group of variables is also listed along with their transformations and their T-test p-values.
+Finally, one variable showed a stronger linear relationship following a transformation.
 
-%should we show some plots of before and after?
 \begin{itemize}
-\item TO BE CONTINUED
+\item \textit{Graph 2}: Shortest path to the United States in terms of sum of weighting 1
 	\begin{itemize}
-	\item Transformation:
-	\item
+	\item Transformation: \begin{math}f(x) = \log{\log{x}}\end{math}
+	\item \begin{math}p=0.00729\end{math}
 	\end{itemize}
 \end{itemize}
 
