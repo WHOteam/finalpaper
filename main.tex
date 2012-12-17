@@ -234,7 +234,7 @@ R also offers the opportunity for any user to create a package, which is a colle
 
 Obesity affects persons all over the globe, and as a result affects the ability of governments to most effectively provide services for their citizens. The phenomenon is growing, rather than subsiding. Without the development of effective tools for managing the obesity epidemic, we will see it continue to expand, much to the detriment of global health and sufficiency.
 
-Large amounts of data exist on the prevalence of obesity. While there are many existing statistical tools to analyze these data, many spurs in obesity rate remain unexplained. The world continues to become more interconnected, with countries influencing one another like never before through their various relationships. An attempt to introduce a quantification of this influence effect is necessary in order to give a more robust interpretation of the growing obesity problem and allow policymakers to have more tools for combating it. Our sponsor, the RAND Corporation, the WHO, and other entities need more complex data modeling tools than ever
+Large amounts of data exist on the prevalence of obesity. While there are many existing statistical tools to analyze these data, many spurs in obesity rate remain unexplained. The world continues to become more interconnected, with countries influencing one another like never before through their various relationships. An attempt to introduce a quantification of this influence effect is necessary in order to give a more robust interpretation of the growing obesity problem and allow policymakers to have more tools for combating it. Our sponsor, the RAND Corporation; the WHO; and other entities need more complex data modeling tools than ever.
 
 Our goal is to make use of already-existing statistical tools to explore the obesity phenomenon, but through a new lens. We intend to incorporate complex data about the relationships between different countries in order to create a more statistically robust model, which as demonstrated by the results of an ANOVA test, is stronger and more informative than a model which does not include graph-theoretic variables. Therefore, this project will not only make use of results from the statistical community, but of the properties and algorithms of vertex-edge graphs. We must develop theoretical graphs using informed representations that will shed light on the complex problem of obesity. Our problem is not only to diagnose and remedy our model such that it is statistically sound, but to diligently develop our independent variables in the first place. Depending on how we define adjacencies and edge weights in the graphs that we examine, we may find more or less informative results. Thus it is paramount to adhere to the rules of the mathematical community while also being creative and adaptable to the results of our choices in constructing the graphs.
 
@@ -278,7 +278,7 @@ Relationships individually between these independent variables and the response 
 \item Total internet users
 \end{itemize}
 
-These variables were removed from consideration in regression analysis.
+\noindent These variables were removed from consideration in regression analysis.
 
 \begin{figure}
 \centering
@@ -386,7 +386,7 @@ The following variables were extracted for each vertex from our graphs in Python
 
 %%%%begin copied section
 
-Relationships individually between these graph-extracted independent variables and the response variable, obesity rate, were also explored for inclusion in a regression model. For the following variables, we were unable to find a linear relationship, or find a suitable transformation to elicit a linear relationship:
+\noindent Relationships individually between these graph-extracted independent variables and the response variable, obesity rate, were also explored for inclusion in a regression model. For the following variables, we were unable to find a linear relationship, or find a suitable transformation to elicit a linear relationship:
 
 \begin{itemize}
 \item \textit{Graph 3}: Shortest path to the United States in terms of sum of weighting 1
@@ -394,7 +394,7 @@ Relationships individually between these graph-extracted independent variables a
 \item \textit{Graph 3}: Number of incoming edges minus number of outgoing edges
 \end{itemize}
 
-These variables were removed from consideration in regression analysis.
+\noindent These variables were removed from consideration in regression analysis.
 
 The following are those variables which had a significant linear relationship, without any linearizing transformations required. They are listed along with the $p$-value from the $t$-test used to test the strength of the relationship.
 
@@ -415,7 +415,7 @@ The following are those variables which had a significant linear relationship, w
 \caption[Scatterplot of a linear relationship with a graph-theoretic variable]{Example scatterplot of a strong linear relationship, between shortest path to the United States and obesity rate (the overlaid line is the simple regression line)}
 \end{figure}
 
-Finally, one variable showed a stronger linear relationship following a transformation.
+\noindent Finally, one variable showed a stronger linear relationship following a transformation.
 
 \begin{itemize}
 \item \textit{Graph 2}: Shortest path to the United States in terms of sum of weighting 1
