@@ -245,6 +245,7 @@ As a result, we will be able to provide a regression equation which effectively 
 Beyond being a useful tool for policymakers the model will also more simply make a contribution to an understanding of how obesity has spread throughout the world. The relationships demonstrated by the model may be of interest to global health analysts and historians, who will now potentially have mathematical ideas to back up their speculations as to the effects of globalization on obesity.
 
 \chapter{Analysis}
+\label{chap:analysis}
 
 \section*{Non-graph-theoretic independent variables}
 
@@ -448,18 +449,19 @@ As discussed in the previous chapter, this relationship, known as multicollinear
 \caption[Scatterplot of a new variable created from combining two variables]{Scatterplot of the new variable versus obesity, overlaid with a simple regression line}
 \end{figure}
 
-There was also a very strong correlation between the two variables extracted from Graph 1, shortest path to the United States in terms of number of edges, and in terms of sum of edge lengths when weighted by national border length. These two variables had a correlation of \begin{math}0.9050\end{math}. In this situation, we did not find that combining the two variables into a new variable was able to yield a stronger relationship than the variables on their own. Therefore, we dropped from our analysis the variable which had a weaker linear relationship with obesity rate, which was the shortest path in terms of the number of edges.
+There was also a very strong correlation between two variables extracted from Graph 1: shortest path to the United States in terms of number of edges, and in terms of sum of edge lengths when weighted by national border length. These two variables had a correlation of \begin{math}0.9050\end{math}. In this situation, we did not find that combining the two variables into a new variable was able to yield a stronger relationship than the variables on their own. Therefore, we dropped from our analysis the variable which had a weaker linear relationship with obesity rate, which was the shortest path in terms of the number of edges.
+
+\subsection*{Missing values}
+
+In particular, one variable found to be statistically significant was missing data for many of the included countries. Many highly developed countries no longer collect or publish data on the percentage of underweight children in their country, because it tends to be very small. For this reason, we had to remove this variable from our model. It restricted the number of countries we could consider and thus reduced the strength of relationship of obesity rate with other predictors.
 
 \section*{Stepwise regression to determine final variable inclusion}
 
-Some individual variables which show strong linear relationships in a simple regression against obesity rate, do not show strong statistical tests for their coefficients when included in a multiple linear regression model among all individually significant independent variables. Our stepwise regression was performed using backward elimination. We removed the following variables for their lack of contribution to a multiple linear regression model:
-\begin{itemize}
-\item TO BE CONTINUED
-\end{itemize}
+Some individual variables which show strong linear relationships in a simple regression against obesity rate, do not show strong statistical tests for their coefficients when included in a multiple linear regression model among all individually significant independent variables. Our stepwise regression was performed using elimination in both directions, comparing models based on their AIC. Out of the 12 independent variables considered in multiple linear regression, 5 were removed based on the results of stepwise regression.
 
-\section*{Validation of usage of graphical variables}
+\section*{Validation of usage of graph-theoretic variables}
 
-Finally, we used an ANOVA test between a multiple linear regression model created through stepwise regression \emph{without} any of the graphical variables, and a multiple linear regression model created through stepwise regression \emph{including} all significant graphical variables. This ANOVA test tests the hypothesis that the model is stronger when the added variables are included. Our test was statistically significant (\begin{math}p=0.0003\end{math}), supporting our hypothesis that graphical variables offer added insight beyond non-graphical ones.
+Finally, we used an ANOVA test between a multiple linear regression model created through stepwise regression \emph{without} any of the graph-theoretic, and a multiple linear regression model created through stepwise regression \emph{including} all significant graph-theoretic variables. This ANOVA test tests the hypothesis that the model is stronger when the added variables are included. Our test was statistically significant (\begin{math}p\leq2.00\cdot10^{-16}\end{math}), supporting our hypothesis that graph-theoretic variables offer added insight beyond non-graph-theoretic ones.
 
 \chapter{Results}
 
@@ -467,7 +469,7 @@ After analyzing all of the potential independent variables, checking for linear 
 \\
 \\
 \begin{math}
-\hat{Y} = f(X,\beta) + \epsilon
+\widehat{Y} = f(X,\hat\beta) + \epsilon
 \end{math}
 \\
 \\
@@ -475,38 +477,42 @@ where
 \\
 \begin{math} X = 
 \begin{pmatrix}
-x1 \\ x2 \\ \sqrt{x3} \\ x4 \\ \log{x5}
+1 \\ x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 \\ x_6 \\ \log{x_7}
 \end{pmatrix}
 \end{math}
+\\
 \\
 and
 \begin{math} \beta =
 \begin{pmatrix}
-0.01 \\ -0.045 \\ 56 \\ 1.23\cdot10^{-3}
+1.11\cdot10^{-2} \\ -3.10\cdot10^{-4} \\ -1.60\cdot10^{-10} \\ -1.10\cdot10^{-5} \\
+5.23\cdot10^{-1} \\ 4.97\cdot10^{-1} \\ -3.04\cdot10^{-3} \\ 1.64\cdot10^{-2}
 \end{pmatrix}
 \end{math}
 \\ \\
 In the appendix, a final list of variables corresponding to the vector X and detailed explanations of their meanings can be found.
 
-\begin{math} \rho =
-\begin{pmatrix}
-p(x_1) \\ p(x_2) \\ \vdots \\p(x_{27})
-\end{pmatrix}
-\end{math}
-
-where \begin{math}p(x_i)\end{math} is the p-value resulting from the hypothesis test that the slope coefficient is zero versus the hypothesis that it is nonzero.
-\\
-The F-test for our model's overall ability to fit the data gave a p-value of TBD, suggesting that our model fits the data quite well.
-\\
-The R-squared value for our model was TBD, which suggests that the independent variables included in our model explain almost all of the variation in the data.
+The F-test for our model's overall ability to fit the data gave a $p$-value of \begin{math}p\leq2.00\cdot10^{-16}\end{math}, suggesting that our model fits the data quite well.
+The \begin{math}R^2\end{math} value for our model was 0.7451, which suggests that our model explains most of the variation in the data.
 
 \chapter{Conclusion}
 
--Explain meaning of model in terms of what the variables actually represent
-\\
--Talk about remaining deficiencies with the model and how they could be improved in the feature, such as the problem of missing information for some predictors
-\\
--Talk about other possibilities for future research
+Our linear regression model is able to quite accurately predict the obesity rate of the 190 countries included in our analysis. We stated that a strong model should have an $F$-test $p$-value of less than 0.05. The value was \begin{math}p\leq2.00\cdot10^{-16}\end{math}, so this criterion was met. As discussed in chapter~\ref{chap:analysis}, each individual independent variable included in the model showed a significant linear relationship with the response variable. We specified that our goal was to achieve an \begin{math}R^2\end{math} of at least 0.8. Our value was 0.7451, so unfortunately, this goal was not met. However, our value was very close. This small deficiency should be a focus of future model development. The inability of our model to achieve a better \begin{math}R^2\end{math} value can possibly be attributed to a lack of other independent variables which explain some variation in a country's obesity rate. This motivates future exploration of graph-theoretic variables and other variables alike. Finally, thanks to the stepwise regression process, we have ensured that our model is the strongest possible model, and the simplest possible model achieving such strength. Our model also meets other assumptions of linear regression. A plot of residuals against fitted values shows that residuals have relatively no distribution in terms of the predicted values.
+
+\begin{figure}
+\centering
+\label{fig:fitted-residuals}
+\includegraphics[width=\textwidth]{fitted-residuals.png}
+\caption[Scatterplot of residuals versus fitted values]{Scatterplot of residuals versus fitted values in our final regression model}
+\end{figure}
+
+In Appendix C can be found comments on the individual relationships between predictor variables and obesity rate. In addition to developing this successful regression model, we have also produced an R package which has a function to output an obesity rate prediction based on specified values of the independent variables. The package also includes the data frame we used in our analysis, and several example plots and images. In this package can also be found our personal resumes and contact information, as well as descriptions of the independent variables used. Therefore, aside from the slightly smaller-than-desired \begin{math}R^2\end{math} value, we have met the demands set forth by our promised deliverables.
+
+Future research should focus on two things.
+\begin{enumerate}
+\item Maintenance of updated information on predictor variables is necessary in order for the model to remain effective. Furthermore, completing missing data on percentage of underweight children in many countries would most likely strengthen the model significantly. A possible goal might be to find and record this information and use it to make the model more robust.
+\item Gathering of obesity rate data for missing countries is also desirable. The world has more than 190 countries, but some countries do not collect obesity data or publish it. Inclusion of these data would impove the model's accuracy. A future researcher on this topic may also consider using overseas territories as separate instances in the model. For example, in this model, French Guiana was considered to be part of France. However, French Guiana is in South America as opposed to Europe, and has a somewhat autonomous economy, political system, and culture. Therefore, it might be beneficial to use separate data for French Guiana.
+\end{enumerate} 
 
 \ifthenelse{\boolean{@twoside}}{\myclearpage}{}
 
@@ -547,6 +553,8 @@ The R-squared value for our model was TBD, which suggests that the independent v
 
 \vspace{8pt} \noindent {\bf .csv file}. A file that stores tabular data in plaintext format, and can be easily processed in most programming languages. Rows are separated by line breaks, and row entries are separated by commas, tabs, semicolons, or other user-specified delimiters.
 
+\vspace{8pt} \noindent {\bf AIC}. A measure of linear model performance which assesses the model's fit based on the amount of information lost when the model is used to describe reality. Absolute values are somewhat meaningless, but the AIC is effective for comparing multiple models.
+
 
 \ifthenelse{\boolean{@twoside}}{\myclearpage}{}
 \chapter{Acronyms}\label{Acronyms}
@@ -572,10 +580,36 @@ The R-squared value for our model was TBD, which suggests that the independent v
 
 \noindent {\bf USD} United States Dollars
 
-%\endinput
+\vspace{5pt}
 
-% Add your bibliography to Contents
+\noindent {\bf AIC} Akaike information criterion
+
+\chapter{Regression variable descriptions}\label{chap:reg-vars}
+
+\noindent {\bf \begin{math}X_1\end{math}}: Birth rate multiplied by fertility rate. The fertility rate is measured as number of births per woman, and the birth rate is measured as number of births per 1000 people. These two metrics were highly correlated, and thus a new metric was created by multiplying the two values together. We found that a higher birth rate and fertility rate corresponded to a lower obesity rate.
+\vspace{5pt}
+
+\noindent {\bf \begin{math}X_2\end{math}}: Population. This is simply the total population of the country. Countries with larger populations tended to have lower obesity rates in our model.
+\vspace{5pt}
+
+\noindent {\bf \begin{math}X_3\end{math}}: Distance to the vertex corresponding to the United States, on graph 1, in terms of weighting 1. This measures the shortest path from the vertex corresponding to the given country, calculated using Djikstra's algorithm where edge weights are equal to the length of the border in kilometers. The higher this metric was for a country, the lower the country's obesity rate was. This means that countries geographically distant from the United States have lower obesity rates. Minimizing the path length based on border length means that paths tended to avoid pairs of countries sharing long borders with another. A long border between two countries may imply more cultural closeness.
+\vspace{5pt}
+
+\noindent {\bf \begin{math}X_4\end{math}}: Import differential. This metric corresponds to the average absolute difference in obesity rates between the given country and those countries from which it imports a large percentage of its total imports. Countries with a higher such differential have higher obesity rates. In other words, countries which tend to import from countries with more divergent obesity rates from their own, tend to be those countries which are the most obese.
+\vspace{5pt}
+
+\noindent {\bf \begin{math}X_5\end{math}}: Export differential. This metric corresponds to the average absolute difference in obesity rates between the given country and those countries to which it exports a large percentage of its total exports. Countries with a higher such differential have higher obesity rates. In other words, countries which tend to export to countries with more divergent obesity rates from their own, tend to be those countries which are most obese.
+\vspace{5pt}
+
+\noindent {\bf \begin{math}X_6\end{math}}: Number of borders. This was the vertex degree in graph 1 and is simply equal to the number of countries that the given country borders. Countries with fewer borders enjoy higher obesity rates. The strength of this relationship is probably influenced largely by the tendency of island nations to have high obesity rates. Other explanations exist, including the fact that landlocked countries inherently have more borders, but also tend to be economically disadvantaged due to not having access to any ports.
+\vspace{5pt}
+
+\noindent {\bf \begin{math}X_7\end{math}}: GDP per capita. This is measured in USD and is the country's total GDP divided by the country's population. When the log of this metric is taken, a higher value corresponds to a higher obesity rate. This is intuitive; wealthier countries are more obese.
+\vspace{5pt}
+
+
 \ifthenelse{\boolean{@twoside}}{\myclearpage}{\newpage}
+
 \addtocontents {toc}{\protect \contentsline {chapter}{REFERENCES}{}}
 \addcontentsline{toc}{chapter}{Selected Bibliography Including Cited Works}  
 
